@@ -2,12 +2,12 @@ package Sledge::Cache::FastMmap;
 use strict;
 use warnings;
 use base 'Sledge::Cache';
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use Cache::FastMmap;
 
 sub _init {
     my ($self, $page) = @_;
-    my $opts = $page->create_config->cache_fastmmap_opts;
+    my $opts = eval {$page->create_config->cache_fastmmap_opts} || ();
     $self->{_fmm} = Cache::FastMmap->new(%$opts);
 }
 
