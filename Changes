@@ -1,5 +1,8 @@
 Revision history for Perl extension Sledge::Cache::FastMmap
 
+0.03  Tue Mar 28 00:41:16 JST 2006
+    - test bug fixed.
+
 0.02  Sun Mar 26 22:14:53 JST 2006
     - now config is optional.
 

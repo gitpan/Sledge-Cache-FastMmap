@@ -2,7 +2,7 @@ package Sledge::Cache::FastMmap;
 use strict;
 use warnings;
 use base 'Sledge::Cache';
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use Cache::FastMmap;
 
 sub _init {
